@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+@import "compass";
+@import "compass/reset/";
+@import "mixin";
+
+
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	font-family: 'メイリオ', 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+	font-size: 10px;
+	min-width: 320px;
+	height: 100%;
+	background-color: #ffff00;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	@include fontsize(12);
+	-webkit-text-size-adjust:100%;
+}
+
+a {
+	text-decoration: none;
+	color: #0099ff;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+::selection {
+	background: #0d3d6e;
+	color: #fff;
+}
+::-moz-selection {
+	background: #0d3d6e;
+	color: #fff;
+}
