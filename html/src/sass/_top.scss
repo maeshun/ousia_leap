@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@import "compass";
+@import "mixin";
+
+.navi {
+	@extend .header;
+	&__list {
+		margin-bottom: -26px;
+		overflow: hidden;
+		height: 100px;
+		// height: 79px;
+		display: block;
+		a {
+			// margin-top: -14px;
+			display: block;
+		}
+	}
+}

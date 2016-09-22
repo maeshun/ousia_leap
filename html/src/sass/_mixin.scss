@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+$leapOrange: #e6b422;
+
 @mixin fontsize($size: 10, $base: 10) {
 	font-size: $size + px;
 	font-size: ($size / $base) * 1rem;
@@ -9,7 +11,6 @@
 		@content;
 	}
 }
-
 @mixin pc {
 	@media only screen and (min-width: 769px) {
 		@content;

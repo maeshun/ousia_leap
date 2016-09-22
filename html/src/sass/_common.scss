@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+@import "compass";
+@import "compass/reset/";
+@import "mixin";
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);	
+
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	// font-family: 'メイリオ', 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+	font-family: 'Noto Sans Japanese', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+	font-size: 10px;
+	// min-width: 320px;
+	height: 100%;
+	background-color: #ffff00;
+	color: #333;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	// @include fontsize(12);
+	-webkit-text-size-adjust:100%;
+}
+
+a {
+	text-decoration: none;
+	color: #e6b422;
+	&:hover {
+		color: #525252;
+	}
+}
+
+img {
+	vertical-align: bottom;
+}
+
+::selection {
+	background: #0d3d6e;
+	color: #fff;
+}
+::-moz-selection {
+	background: #0d3d6e;
+	color: #fff;
+}
+.header {
+	@include fontsize(100);
+    margin-bottom: -25px;
+	font-weight: bold;
+	color: $leapOrange;
+	letter-spacing: -8px;
+	&________fixed {
+		position: fixed;
+	}
+}
+.wrapper {
+	background-color: #fff;
+	padding: 40px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.title {
+	@include fontsize(100);
+	font-weight: bold;
+	color: #e6b422;
+	letter-spacing: -8px;
+}
+.footer {
+	position: fixed;
+	bottom: 20px;
+	@include fontsize(12);
+	color: #e6b422;
+}
