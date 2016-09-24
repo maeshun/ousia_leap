@@ -23,7 +23,7 @@ gulp.task('compass', function(){
 		.pipe(compass({
 			config_file: 'config.rb',
 			comments: false,
-			css: '../src/css/',
+			css: '../src/assets/css/',
 			sass: '../src/sass/'
 		}));
 		// .pipe(browser.reload());

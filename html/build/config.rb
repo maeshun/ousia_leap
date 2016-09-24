@@ -4,7 +4,7 @@ require 'compass/import-once/activate'
 # Set this to the root of your project when deployed:
 project_path = "../src";
 # http_path = "../src"
-css_dir		= "css"
+css_dir		= "assets/css"
 sass_dir	= "sass"
 # compassのバグらしく、この1行が必要
 sass_path = File.expand_path(sass_dir, project_path)
