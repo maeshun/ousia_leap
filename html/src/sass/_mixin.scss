@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 $leapOrange: #e6b422;
+$leapYellow: #ffff00;
+$leapGrey: #525252;
 
 @mixin fontsize($size: 10, $base: 10) {
 	font-size: $size + px;

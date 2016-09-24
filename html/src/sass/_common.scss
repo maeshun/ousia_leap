@@ -14,9 +14,9 @@ html {
 	// font-family: 'メイリオ', 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
 	font-family: 'Noto Sans Japanese', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
 	font-size: 10px;
-	// min-width: 320px;
+	min-width: 320px;
 	height: 100%;
-	background-color: #ffff00;
+	background-color: $leapYellow;
 	color: #333;
 	box-sizing: border-box;
 }
@@ -30,9 +30,9 @@ body {
 
 a {
 	text-decoration: none;
-	color: #e6b422;
+	color: $leapOrange;
 	&:hover {
-		color: #525252;
+		color: $leapGrey;
 	}
 }
 
@@ -54,25 +54,67 @@ img {
 	font-weight: bold;
 	color: $leapOrange;
 	letter-spacing: -8px;
-	&________fixed {
-		position: fixed;
-	}
+	z-index: 10;
+}
+.header____fixed {
+	position: fixed;
 }
 .wrapper {
-	background-color: #fff;
-	padding: 40px;
-	width: 1000px;
+	// background-color: #fff;
+	padding: 40px 40px 80px;
+	// width: 1000px;
+	width: 100%;
 	margin: 0 auto;
+}
+.main__contents {
+	// padding-left: 9px;
+}
+.main____underlayer {
+	padding-top: 74px;
 }
 .title {
 	@include fontsize(100);
 	font-weight: bold;
-	color: #e6b422;
+	color: $leapOrange;
 	letter-spacing: -8px;
 }
 .footer {
 	position: fixed;
-	bottom: 20px;
+	width: 100%;
+	bottom: 0;
+	padding: 20px 0;
 	@include fontsize(12);
-	color: #e6b422;
+	color: $leapOrange;
+	z-index: 10;
+	background-color: rgba($leapYellow, 0.8);
+}
+.footer__litss {
+}
+.footer__list {
+	display: inline-block;
+	margin-right: 70px;
+	letter-spacing: 0.1em;
+}
+.footer__list__logo {
+	width: 44px;
+}
+.footerLink {
+	margin-bottom: 15px;
+}
+.footerLink__list {
+	position: relative;
+	font-weight: bold;
+	display: inline-block;
+	padding-right: 18px;
+	&:after {
+		content: "/";
+		position: absolute;
+		right: 6px;
+		top: 0;
+	}
+	&:last-child {
+		&:after {
+			content: none;
+		}
+	}
 }

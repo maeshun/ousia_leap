@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@import "compass";
+@import "mixin";
+
+.rimNavi {
+	@extend .header;
+	height: 100%;
+}
+.rimNavi__list {
+	margin-bottom: -26px;
+	overflow: hidden;
+	height: 100px;
+	display: block;
+	a {
+		display: block;
+	}
+}
+.rimStaff {
+	margin-top: 50%;
+}
+.rimStaff__introduction {
+	padding-top: 114px;
+	padding-bottom: 65px;
+}
+.rimStaff__job {
+	@include fontsize(100);
+	font-weight: bold;
+	color: $leapOrange;
+	letter-spacing: -8px;
+	margin-bottom: 50px;
+}
+.rimStaff__staff {
+	line-height: 2;
+}
+.rimStaff__name {
+	@include fontsize(20);
+	color: $leapOrange;
+	letter-spacing: 0.1em;
+}
+.rimStaff__clients {
+	margin-bottom: 105px;
+	h3 {
+		color: $leapOrange;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}
