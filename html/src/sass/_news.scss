@@ -4,16 +4,24 @@
 @import "mixin";
 
 .news {
-	margin-top: 56px;
 	line-height: 2;
-	&__date {
-		@include fontsize(14);
-		color: $leapOrange;
+}
+.news__date {
+	@include fontsize(14);
+	color: $leapOrange;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+.news__detail {
+	margin-bottom: 60px;
+	letter-spacing: 0.1em;
+	strong {
 		font-weight: bold;
-		letter-spacing: 0.1em;
 	}
-	&__detail {
-		margin-bottom: 60px;
-		letter-spacing: 0.1em;
+	em {
+		font-style: italic;
+	}
+	p {
+		margin-bottom: 10px;
 	}
 }

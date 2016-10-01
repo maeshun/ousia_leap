@@ -6,9 +6,9 @@
 .navi {
 	@extend .header;
 	&__list {
-		margin-bottom: -26px;
+		margin-bottom: -32px;
 		overflow: hidden;
-		height: 100px;
+		height: 125px;
 		// height: 79px;
 		display: block;
 		a {

@@ -100,9 +100,9 @@ img {
 }
 
 .header, .navi, .rimNavi {
-  font-size: 100px;
-  font-size: 10rem;
-  margin-bottom: -25px;
+  font-size: 125px;
+  font-size: 12.5rem;
+  margin-bottom: -32px;
   font-weight: bold;
   color: #e6b422;
   letter-spacing: -8px;
@@ -114,18 +114,23 @@ img {
 }
 
 .wrapper {
-  padding: 40px 40px 80px;
+  padding: 15px 40px 80px 40px;
   width: 100%;
   margin: 0 auto;
 }
 
+.main__contents {
+  margin-top: 56px;
+  padding-left: 9px;
+}
+
 .main____underlayer {
-  padding-top: 74px;
+  padding-top: 92px;
 }
 
 .title {
-  font-size: 100px;
-  font-size: 10rem;
+  font-size: 125px;
+  font-size: 12.5rem;
   font-weight: bold;
   color: #e6b422;
   letter-spacing: -8px;
@@ -135,7 +140,7 @@ img {
   position: fixed;
   width: 100%;
   bottom: 0;
-  padding: 20px 0;
+  padding: 15px 0 20px 9px;
   font-size: 12px;
   font-size: 1.2rem;
   color: #e6b422;
@@ -147,10 +152,13 @@ img {
   display: inline-block;
   margin-right: 70px;
   letter-spacing: 0.1em;
+  height: 27px;
+  line-height: 27px;
+  vertical-align: middle;
 }
 
 .footer__list__logo {
-  width: 44px;
+  width: 65px;
 }
 
 .footerLink {
@@ -174,9 +182,9 @@ img {
 }
 
 .navi__list {
-  margin-bottom: -26px;
+  margin-bottom: -32px;
   overflow: hidden;
-  height: 100px;
+  height: 125px;
   display: block;
 }
 .navi__list a {
@@ -184,7 +192,6 @@ img {
 }
 
 .about {
-  margin-top: 56px;
   line-height: 2;
 }
 .about__title {
@@ -200,9 +207,9 @@ img {
 }
 
 .news {
-  margin-top: 56px;
   line-height: 2;
 }
+
 .news__date {
   font-size: 14px;
   font-size: 1.4rem;
@@ -210,13 +217,19 @@ img {
   font-weight: bold;
   letter-spacing: 0.1em;
 }
+
 .news__detail {
   margin-bottom: 60px;
   letter-spacing: 0.1em;
 }
-
-.work {
-  margin-top: 56px;
+.news__detail strong {
+  font-weight: bold;
+}
+.news__detail em {
+  font-style: italic;
+}
+.news__detail p {
+  margin-bottom: 10px;
 }
 
 .work__list {
@@ -245,9 +258,9 @@ img {
 }
 
 .rimNavi__list {
-  margin-bottom: -26px;
+  margin-bottom: -32px;
   overflow: hidden;
-  height: 100px;
+  height: 125px;
   display: block;
 }
 .rimNavi__list a {
@@ -259,13 +272,13 @@ img {
 }
 
 .rimStaff__introduction {
-  padding-top: 114px;
+  padding-top: 104px;
   padding-bottom: 65px;
 }
 
 .rimStaff__job {
-  font-size: 100px;
-  font-size: 10rem;
+  font-size: 125px;
+  font-size: 12.5rem;
   font-weight: bold;
   color: #e6b422;
   letter-spacing: -8px;
@@ -274,6 +287,7 @@ img {
 
 .rimStaff__staff {
   line-height: 2;
+  padding-left: 9px;
 }
 
 .rimStaff__name {
@@ -290,7 +304,14 @@ img {
   color: #e6b422;
   font-weight: bold;
   text-decoration: underline;
+  margin-top: 20px;
 }
 .rimStaff__clients p {
   margin-bottom: 20px;
+}
+.rimStaff__clients strong {
+  font-weight: bold;
+}
+.rimStaff__clients em {
+  font-style: italic;
 }

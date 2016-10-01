@@ -49,8 +49,8 @@ img {
 	color: #fff;
 }
 .header {
-	@include fontsize(100);
-    margin-bottom: -25px;
+	@include fontsize(125);
+    margin-bottom: -32px;
 	font-weight: bold;
 	color: $leapOrange;
 	letter-spacing: -8px;
@@ -61,19 +61,20 @@ img {
 }
 .wrapper {
 	// background-color: #fff;
-	padding: 40px 40px 80px;
+	padding: 15px 40px 80px 40px;
 	// width: 1000px;
 	width: 100%;
 	margin: 0 auto;
 }
 .main__contents {
-	// padding-left: 9px;
+	margin-top: 56px;
+	padding-left: 9px;
 }
 .main____underlayer {
-	padding-top: 74px;
+	padding-top: 92px;
 }
 .title {
-	@include fontsize(100);
+	@include fontsize(125);
 	font-weight: bold;
 	color: $leapOrange;
 	letter-spacing: -8px;
@@ -82,7 +83,7 @@ img {
 	position: fixed;
 	width: 100%;
 	bottom: 0;
-	padding: 20px 0;
+	padding: 15px 0 20px 9px;
 	@include fontsize(12);
 	color: $leapOrange;
 	z-index: 10;
@@ -94,9 +95,12 @@ img {
 	display: inline-block;
 	margin-right: 70px;
 	letter-spacing: 0.1em;
+	height: 27px;
+	line-height: 27px;
+	vertical-align: middle;
 }
 .footer__list__logo {
-	width: 44px;
+	width: 65px;
 }
 .footerLink {
 	margin-bottom: 15px;

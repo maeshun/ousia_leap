@@ -4,7 +4,6 @@
 @import "mixin";
 
 .about {
-	margin-top: 56px;
 	line-height: 2;
 	&__title {
 		@include fontsize(12);
