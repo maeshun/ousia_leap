@@ -8,20 +8,23 @@
 	height: 100%;
 }
 .rimNavi__list {
-	margin-bottom: -32px;
-	overflow: hidden;
-	height: 125px;
 	display: block;
+	word-break: break-all;
+	word-wrap: break-all;
+	overflow: hidden;
+	margin-bottom: -9px;
+	padding-bottom: 10px;
 	a {
+    line-height: 0.74;
 		display: block;
 	}
 }
 .rimStaff {
-	margin-top: 50%;
+	margin-top: 30%;
 }
 .rimStaff__introduction {
-	padding-top: 104px;
-	padding-bottom: 65px;
+	padding-top: 121px;
+	// padding-bottom: 65px;
 }
 .rimStaff__job {
 	@include fontsize(125);
@@ -29,6 +32,9 @@
 	color: $leapOrange;
 	letter-spacing: -8px;
 	margin-bottom: 50px;
+	word-break: break-all;
+	word-wrap: break-all;
+	line-height: 0.74;
 }
 .rimStaff__staff {
 	line-height: 2;
@@ -38,9 +44,11 @@
 	@include fontsize(20);
 	color: $leapOrange;
 	letter-spacing: 0.1em;
+	font-weight: bold;
 }
 .rimStaff__clients {
 	margin-bottom: 105px;
+	letter-spacing: 0.15em;
 	h3 {
 		color: $leapOrange;
 		font-weight: bold;
@@ -56,4 +64,7 @@
 	em {
 		font-style: italic;
 	}
+}
+.rinStaffOrder {
+	padding-bottom: 130px;	
 }

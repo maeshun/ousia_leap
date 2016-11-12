@@ -1,7 +1,7 @@
 (function(){
 	$(function(){
 		init();
-		openOverlay.init();
+		overlay.init();
 	})
 
 	function init() {
@@ -16,26 +16,33 @@
 			$("body, html").animate({
 				scrollTop: $target.offset().top
 			}, 500);
+
 		})
+
+
+
 	}
 
 
-	var openOverlay = {
+	var overlay = {
 		init : function() {
+			var me = this;
+			// console.log(this);
 			$(".work__thumbnail").on("click", function(){
 				var hash = $(this).attr("href");
-				openOverlay.open(hash);
+				me.open(hash);
 			})
 			$("#modalCloseBtn").on("click", function(){
-				openOverlay.close();
+				me.close();
 			})
-			openOverlay.changeOverlayContents();
+			me.changeOverlayContents();
+			me.closeOverlayByEscKey();
 		},
 		open : function(hash) {
 			$('body').addClass("isOverlayOpen");
 			$(hash).addClass("isShow");
 			$("#modalBg, " + hash).fadeIn(100);
-			openOverlay.checkEdgeOfOverlay();
+			this.checkEdgeOfOverlay();
 		},
 		close : function() {
 			$('body').removeClass("isOverlayOpen");
@@ -43,6 +50,8 @@
 			$("#modalBg, .workDetail").fadeOut(100);
 		},
 		changeOverlayContents : function() {
+			var me = this;
+
 			$(".workDetail__changeBtn").on("click", function() {
 				var $currentDetail = $(".isShow");
 				var $changeContents = '';
@@ -53,11 +62,15 @@
 					$changeContents = $currentDetail.next();					
 				}
 
+				if ($changeContents.hasClass("workDetail__changeBtn")) {
+					return false;
+				}
+
 				$currentDetail.removeClass("isShow");
 				$changeContents.addClass("isShow");
 				$currentDetail.fadeOut(100, function() {
 					$changeContents.fadeIn(100);
-					openOverlay.checkEdgeOfOverlay();
+					me.checkEdgeOfOverlay();
 				});
 			})
 		},
@@ -72,6 +85,14 @@
 			} else {
 				$("#prevBtn").show();
 			}
+		},
+		closeOverlayByEscKey : function() {
+			var me = this;
+			$(window).keyup(function(e){
+				if (e.keyCode == 27) {
+					me.close();
+				}
+			});
 		}
 	}
 })()
